@@ -5,6 +5,7 @@
 import json
 import os
 import openai
+import streamlit as st
 
 def make_openai_request(prompt):
     """Takes a prompt as an argument and sends a POST request to the OpenAI API"""
