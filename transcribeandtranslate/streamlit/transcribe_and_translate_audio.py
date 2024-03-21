@@ -28,6 +28,9 @@ def make_openai_request(prompt):
     # Extract the generated labels from the API response
     return response.choices[0].message.content.split("\n")
 
+st.title("Transcribe and Translate your MP3")
+
+st.info("Please enter your OpenAI key in the panel on the left and upload an mp3 file to be transcribed and translated.")
 
 openai.api_key = st.sidebar.text_input('OpenAI API Key', type='password')
 
@@ -36,7 +39,6 @@ audio_file = st.file_uploader("Choose an mp3 file", type=['mp3'])
 if audio_file is not None and openai.api_key.startswith('sk-'):
     transcript = openai.audio.transcriptions.create(model="whisper-1", file=audio_file)
 
-    print(transcript)
     st.write("Transcript: ", transcript)
 
     prompt = transcript.text
