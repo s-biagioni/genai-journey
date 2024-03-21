@@ -15,7 +15,7 @@ def make_openai_request(prompt):
         {
             "role": "system",
             "content": """Your translations should not contain the word scorci.\n\n
-                            You will be provided with a sentence in Japanese, and your task is to translate it into Italian."""
+                            You will be provided with a sentence in Japanese, and your task is to translate it into English."""
         },
         {
             "role": "user",
@@ -47,7 +47,7 @@ if audio_file is not None and openai.api_key.startswith('sk-'):
 
     translation = make_openai_request(prompt)
 
-    st.write("Translation: ", translation[0])
+    st.write("Translation: ", translation[0].text)
 
     # Previous results
     # Temperature 0
