@@ -33,7 +33,7 @@ openai.api_key = st.sidebar.text_input('OpenAI API Key', type='password')
 
 audio_file = st.file_uploader("Choose an mp3 file", type=['mp3'])
 
-if audio_file is not None:
+if audio_file is not None and openai.api_key.startswith('sk-'):
     transcript = openai.audio.transcriptions.create(model="whisper-1", file=audio_file)
 
     print(transcript)
