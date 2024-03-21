@@ -39,15 +39,13 @@ audio_file = st.file_uploader("Choose an mp3 file", type=['mp3'])
 if audio_file is not None and openai.api_key.startswith('sk-'):
     transcript = openai.audio.transcriptions.create(model="whisper-1", file=audio_file)
 
-    st.write("Transcript: ", transcript)
+    st.write("Transcript: ", transcript.text)
 
     prompt = transcript.text
 
-    st.write("Prompt: ", prompt)
-
     translation = make_openai_request(prompt)
 
-    st.write("Translation: ", translation[0].text)
+    st.write("Translation: ", translation[0])
 
     # Previous results
     # Temperature 0
