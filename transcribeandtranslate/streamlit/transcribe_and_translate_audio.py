@@ -30,7 +30,7 @@ def make_openai_request(prompt):
 
 st.title("Transcribe and Translate your MP3")
 
-st.info("Please enter your OpenAI key in the panel on the left and upload an mp3 file to be transcribed and translated.")
+st.info("Please enter your OpenAI key in the panel on the left and upload below an mp3 file to be transcribed and translated.")
 
 openai.api_key = st.sidebar.text_input('OpenAI API Key', type='password')
 
