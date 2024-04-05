@@ -81,7 +81,7 @@ if string1 and string2 and string3 and openai.api_key.startswith('sk-'):
                 response.data[2].embedding]
     embeddings_array = np.array(embeddings)
 
-    st.write("Shape: " + str(embeddings_array.shape))
+    st.write("Embeddings shape: " + str(embeddings_array.shape))
     st.write(embeddings_array)
 
     # reducing the embedding dimension with PCA
@@ -93,7 +93,7 @@ if string1 and string2 and string3 and openai.api_key.startswith('sk-'):
     new_values = PCA_model.transform(embeddings_array)
 
 
-    st.write("PCA Shape: " + str(new_values.shape))
+    st.write("PCA shape: " + str(new_values.shape))
     st.write(new_values)
 
     # st.write(new_values[:,0])
