@@ -97,10 +97,8 @@ if string1 and string2 and string3 and openai.api_key.startswith('sk-'):
     st.write("PCA Shape: " + str(new_values.shape))
     st.write(new_values)
 
-
-    st.write(new_values[:,0])
-    st.write(new_values[:,1])
-
+    # st.write(new_values[:,0])
+    # st.write(new_values[:,1])
 
     colours = ListedColormap(['r','b','g'])
     values = [0, 1, 2]
