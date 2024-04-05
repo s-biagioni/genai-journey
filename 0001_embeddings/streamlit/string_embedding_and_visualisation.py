@@ -111,6 +111,5 @@ if string1 and string2 and string3 and openai.api_key.startswith('sk-'):
     plt.axis('square')
 
     # https://discuss.streamlit.io/t/how-to-display-matplotlib-graphs-in-streamlit-application/35383/2
-    fig = plt.figure(figsize=(8,8))
-    st.pyplot(fig) # instead of plt.show()
+    st.pyplot(plt.gcf()) # instead of plt.show()
 
