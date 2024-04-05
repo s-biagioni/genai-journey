@@ -67,9 +67,7 @@ if string1 and string2 and string3 and openai.api_key.startswith('sk-'):
     st.write('cosine similarity(string1, string3): ')
     st.write(cosine_similarity3)
 
-    st.write("Shape: " + str(embeddings_array.shape))
-    st.write(embeddings_array)
-            
+          
     # heatmap among equal strings
     seaborn.heatmap([response.data[0].embedding[:20], response.data[1].embedding[:20],response.data[2].embedding[:20]], 
                     cbar=False, xticklabels=False, yticklabels=[string1, string2, string3]
@@ -83,6 +81,9 @@ if string1 and string2 and string3 and openai.api_key.startswith('sk-'):
                 response.data[1].embedding, 
                 response.data[2].embedding]
     embeddings_array = np.array(embeddings)
+
+    st.write("Shape: " + str(embeddings_array.shape))
+    st.write(embeddings_array)
 
     # reducing the embedding dimension with PCA
     # https://learn.deeplearning.ai/courses/google-cloud-vertex-ai/lesson/4/visualizing-embeddings
