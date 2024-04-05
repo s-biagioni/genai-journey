@@ -66,7 +66,6 @@ if string1 and string2 and string3 and openai.api_key.startswith('sk-'):
 
     st.write('cosine similarity(string1, string3): ')
     st.write(cosine_similarity3)
-
           
     # heatmap among equal strings
     seaborn.heatmap([response.data[0].embedding[:20], response.data[1].embedding[:20],response.data[2].embedding[:20]], 
