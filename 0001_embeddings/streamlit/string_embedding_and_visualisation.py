@@ -106,9 +106,9 @@ if string1 and string2 and string3 and openai.api_key.startswith('sk-'):
     values = [0, 1, 2]
     scatter = plt.scatter(new_values[:,0], new_values[:,1], c=values, cmap=colours)
     classes = [string1, string2, string3]
-    plt.legend(handles=scatter.legend_elements()[0], labels=classes)
+    #plt.legend(handles=scatter.legend_elements()[0], labels=classes)
 
-    plt.axis('square')
+    #plt.axis('square')
 
     # https://discuss.streamlit.io/t/how-to-display-matplotlib-graphs-in-streamlit-application/35383/2
     st.pyplot(plt.gcf()) # instead of plt.show()
