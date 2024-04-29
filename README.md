@@ -2,6 +2,8 @@
 https://www.deeplearning.ai/short-courses/google-cloud-vertex-ai/
 	- embedding of a strings
 	- distance among strings
+	- Exercises:
+		+ https://github.com/s-biagioni/genai-journey/tree/main/0001_embeddings
 
 2. [X] Vector Databases
 https://www.deeplearning.ai/short-courses/vector-databases-embeddings-applications/
@@ -21,6 +23,8 @@ https://www.deeplearning.ai/short-courses/vector-databases-embeddings-applicatio
 		+ comparing Sparse, Dense and Hybrid search  using Weaviate
 	- https://learn.deeplearning.ai/courses/vector-databases-embeddings-applications/lesson/7/application---multilingual-search
 		+ Weaviate (multilingual vector db search) + Cohere (RAG)
+	- Exercises
+		+ https://github.com/s-biagioni/genai-journey/tree/main/0002_Image_Embeddings
 
 3. [ ] LangChain
 https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/
