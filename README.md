@@ -28,6 +28,12 @@ https://www.deeplearning.ai/short-courses/vector-databases-embeddings-applicatio
 
 3. [ ] LangChain
 https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/
+	+ Models, Prompts and Parsers
+		- OpenAI ChatGPT 3 turbo through LangChain wrapper
+			- prompt formatting
+		- LangChain LLM's output parsing to Python dictionary
+			e.g., Thought, Action, Observation (Chain-of-Thought Reasoning – ReAct)
+			- LangChain StructuredOutputParser
  https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/
  --> look at Gabriele's links
  https://www.deeplearning.ai/short-courses/functions-tools-agents-langchain/
