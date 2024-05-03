@@ -34,6 +34,11 @@ https://www.deeplearning.ai/short-courses/langchain-for-llm-application-developm
 		- LangChain LLM's output parsing to Python dictionary
 			e.g., Thought, Action, Observation (Chain-of-Thought Reasoning – ReAct)
 			- LangChain StructuredOutputParser
+	+ Memory
+		- ConversationBufferMemory
+		- ConversationBufferWindowMemory  (you state how many conversational exchanges it should remember)
+		- ConversationTokenBufferMemory
+		- ConversationSummaryMemory
  https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/
  --> look at Gabriele's links
  https://www.deeplearning.ai/short-courses/functions-tools-agents-langchain/
