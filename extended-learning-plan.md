@@ -47,6 +47,14 @@ https://www.deeplearning.ai/short-courses/langchain-for-llm-application-developm
 		- Router Chain = conditional usage of specific LLMChains on the basis of the input
 	+ Q&A over Documents
 		- VectorstoreIndexCreator( DocArrayInMemorySearch ) + OpenAIEmbeddings to embed the documents
+	+ LangChain evaluation
+			1. creating query+answer examples with QAGenerateChain.from_llm(ChatOpenAI)
+		- Manual evaluation (and debuging)
+			2.1 manually evaluate happens under the hood when running qa.run(examples[0]["query]) by setting langchain.debug = True
+		- LLM-assisted evaluation 
+			2.2 use QAEvalChain to have a model evaluate the answers from the model
+		- LangChain evaluation platform
+			- LangChain evaluation platform:  https://www.langchain.plus/
  https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/
  --> look at Gabriele's links
  https://www.deeplearning.ai/short-courses/functions-tools-agents-langchain/

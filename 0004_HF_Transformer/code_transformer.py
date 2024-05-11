@@ -4,7 +4,7 @@
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 # The format is: Salesforce/codegen-{size}-{data}, where
-# size: 350M, 2B, 6B, 16B
+# size: 350M, 2B, 6B, 16B (number of parameters/learnable weights)
 # data:
 # nl: Pre-trained on the Pile
 # multi: Initialized with nl, then further pre-trained on multiple programming languages data
