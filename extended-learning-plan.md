@@ -36,9 +36,17 @@ https://www.deeplearning.ai/short-courses/langchain-for-llm-application-developm
 			- LangChain StructuredOutputParser
 	+ Memory
 		- ConversationBufferMemory
-		- ConversationBufferWindowMemory  (you state how many conversational exchanges it should remember)
-		- ConversationTokenBufferMemory
+		- ConversationBufferWindowMemory --> you state how many conversational exchanges it should remember
+		- ConversationTokenBufferMemory	 --> limits the number of tokens saved
 		- ConversationSummaryMemory
+	+ Chains
+		- LLMChain = llm + prompt
+		- Sequential Chains
+			- SimpleSequentialChain = single input, single output LLMChains concatenated
+			- SequentialChain = multiple input, multiple output LLMChains concatenated
+		- Router Chain = conditional usage of specific LLMChains on the basis of the input
+	+ Q&A over Documents
+		- VectorstoreIndexCreator( DocArrayInMemorySearch ) + OpenAIEmbeddings to embed the documents
  https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/
  --> look at Gabriele's links
  https://www.deeplearning.ai/short-courses/functions-tools-agents-langchain/
@@ -53,6 +61,7 @@ https://www.deeplearning.ai/short-courses/reinforcement-learning-from-human-feed
 - [ ] later
 	+ RAG
 		https://www.deeplearning.ai/short-courses/knowledge-graphs-rag/
+		https://learn.deeplearning.ai/courses/building-agentic-rag-with-llamaindex/
 
 	+ KV caching and LoRA
 		https://www.deeplearning.ai/short-courses/efficiently-serving-llms/
