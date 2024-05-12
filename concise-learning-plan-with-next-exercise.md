@@ -52,9 +52,10 @@ https://www.deeplearning.ai/short-courses/reinforcement-learning-from-human-feed
 		- once they are convinced the might give you more resources
 	+ private Azure endpoint
 		https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/tools-reference/llm-tool?view=azureml-api-2
-		https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource?view=azureml-api-2&pivots=web-portal
-		- prompt flow
-			- same as Rivet but on Azure
+		--> [link: Create Azure OpenAI resources with these instructions] 
+			https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource?view=azureml-api-2&pivots=web-portal
+	+ prompt flow [same as Rivet but on Azure]
+	  https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/tools-reference/python-tool?view=azureml-api-2
 
 
 ## GenAI Promotion Inspo
