@@ -50,7 +50,11 @@ https://www.deeplearning.ai/short-courses/reinforcement-learning-from-human-feed
 	+ use Rivet to evaluate your chain/RAG
 	+ create some mock up code to be used with chatgpt and show GenAI capabilities
 		- once they are convinced the might give you more resources
-	
+	+ private Azure endpoint
+		https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/tools-reference/llm-tool?view=azureml-api-2
+		https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource?view=azureml-api-2&pivots=web-portal
+		- prompt flow
+			- same as Rivet but on Azure
 
 
 ## GenAI Promotion Inspo

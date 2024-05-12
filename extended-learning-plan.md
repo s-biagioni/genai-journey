@@ -55,6 +55,12 @@ https://www.deeplearning.ai/short-courses/langchain-for-llm-application-developm
 			2.2 use QAEvalChain to have a model evaluate the answers from the model
 		- LangChain evaluation platform
 			- LangChain evaluation platform:  https://www.langchain.plus/
+	+ Agents
+		- Using built in LangChain agents
+			- Calculator
+			- Wikipedia
+			- Python
+		- Defining your own tools
  https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/
  --> look at Gabriele's links
  https://www.deeplearning.ai/short-courses/functions-tools-agents-langchain/
