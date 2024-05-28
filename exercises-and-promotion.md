@@ -1,41 +1,23 @@
-## Concise
-
-1. Text Embeddings
-https://www.deeplearning.ai/short-courses/google-cloud-vertex-ai/
-
-2. Vector Databases
-https://www.deeplearning.ai/short-courses/vector-databases-embeddings-applications/
-https://www.deeplearning.ai/short-courses/building-applications-vector-databases/
-
-3. LangChain
-https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/
-https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/
---> look at Gabriele's links
-https://www.deeplearning.ai/short-courses/functions-tools-agents-langchain/
-
-
-4. Fine-Tuning
-https://www.deeplearning.ai/short-courses/finetuning-large-language-models/
-
-5. Reinforcement Learning
-https://www.deeplearning.ai/short-courses/reinforcement-learning-from-human-feedback/
-
-
-- later
-	+ RAG
-		https://www.deeplearning.ai/short-courses/knowledge-graphs-rag/
-		https://learn.deeplearning.ai/courses/building-agentic-rag-with-llamaindex/
-
-	+ KV caching and LoRA
-		https://www.deeplearning.ai/short-courses/efficiently-serving-llms/
-
-
 ## Exercise
+	- Streamlit app where you get info from Wikipedia starting from a query
+		- https://python.langchain.com/v0.2/docs/integrations/retrievers/wikipedia/
+		- https://python.langchain.com/v0.2/docs/integrations/providers/wikipedia/
+		- https://www.shakudo.io/blog/building-confluence-kb-qanda-app-langchain-chatgpt
+	
+	
 	- Image and text embedding with Hugging Face
 		- https://huggingface.co/blog/image-similarity
 		- https://discuss.huggingface.co/t/how-to-combine-image-and-text-embedding-for-product-similarity/47761 
 
 ## GenAI Promotion
+
+	0. Documentation navigator
+		- https://learn.deeplearning.ai/courses/langchain-chat-with-your-data/
+		- https://www.shakudo.io/blog/building-confluence-kb-qanda-app-langchain-chatgpt
+	1. Boilerplate code generator
+		- https://www.shakudo.io/blog/building-confluence-kb-qanda-app-langchain-chatgpt
+	2. Bug fixing/prevention/analysis	
+		- https://www.deeplearning.ai/the-batch/github-previews-copilot-workspace-for-end-to-end-software-development/  
 
 	+ Using HF models with private company data
 		- https://discuss.huggingface.co/t/using-hugging-face-models-with-private-company-data/56403
@@ -56,6 +38,8 @@ https://www.deeplearning.ai/short-courses/reinforcement-learning-from-human-feed
 			https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource?view=azureml-api-2&pivots=web-portal
 	+ prompt flow [same as Rivet but on Azure]
 	  https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/tools-reference/python-tool?view=azureml-api-2
+
+	
 
 
 ## GenAI Promotion Inspo

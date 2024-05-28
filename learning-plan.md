@@ -1,3 +1,38 @@
+## Concise
+
+1. Text Embeddings
+https://www.deeplearning.ai/short-courses/google-cloud-vertex-ai/
+
+2. Vector Databases
+https://www.deeplearning.ai/short-courses/vector-databases-embeddings-applications/
+https://www.deeplearning.ai/short-courses/building-applications-vector-databases/
+
+3. LangChain
+https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/
+https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/
+--> look at Gabriele's links
+https://www.deeplearning.ai/short-courses/functions-tools-agents-langchain/
+
+
+4. Fine-Tuning
+https://www.deeplearning.ai/short-courses/finetuning-large-language-models/
+
+5. Reinforcement Learning
+https://www.deeplearning.ai/short-courses/reinforcement-learning-from-human-feedback/
+
+
+- later
+	+ RAG
+		https://www.deeplearning.ai/short-courses/knowledge-graphs-rag/
+		https://learn.deeplearning.ai/courses/building-agentic-rag-with-llamaindex/
+
+	+ KV caching and LoRA
+		https://www.deeplearning.ai/short-courses/efficiently-serving-llms/
+
+
+## Extended
+
+
 1. [X] Text Embeddings
 https://www.deeplearning.ai/short-courses/google-cloud-vertex-ai/
 	- embedding of a strings
@@ -62,6 +97,49 @@ https://www.deeplearning.ai/short-courses/langchain-for-llm-application-developm
 			- Python
 		- Defining your own tools
  https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/
+	+ Document Loading
+		- PDFs
+		- YouTube
+		- Urls
+	+ Document Splitting
+		- CharacterTextSplitter 
+			- changing the separator 
+		- RecursiveCharacterTextSplitter
+			- used different kinds of separators (\n, space, \n\n " ", "", "\.")
+		- TokenTextSplitter
+		- MarkdownHeaderTextSplitter
+			- splits a markdown on the basis of the header
+	+ Vectorstores and embedding
+		- Embeddings
+			- OpenAIEmbeddings
+				- numpy.dot(embedding1, embedding2)
+		- Vectorstores
+			- Chroma
+				- similarity search on PyPDFLoader  --> RecursiveCharacterTextSplitter
+					- question = "is there an email i can ask for help"
+					  docs = vectordb.similarity_search(question,k=3)
+	+ Retrieval
+		- vectordb = Chroma()
+			+ MMR (fosters diversity in a top-k search)
+				- vectordb.max_marginal_relevance_search(question,k=3)
+			+ SelfQuery
+				- from langchain.retrievers.self_query.base import SelfQueryRetriever
+			+ Compression
+				- from langchain.retrievers import ContextualCompressionRetriever
+				- from langchain.retrievers.document_compressors import LLMChainExtractor
+	+ Question Answering
+		- RetrievalQA Chain
+			- from langchain.chains import RetrievalQA
+		- RetrievalQA chain types
+			- stuff(default),
+			- efficient usage of the context window
+				- map_reduce, refine
+	+ Chat
+		- handling follow-up questions
+			- from langchain.memory import ConversationBufferMemory
+		- creation of a complete chatbot
+ 
+ 
  --> look at Gabriele's links
  https://www.deeplearning.ai/short-courses/functions-tools-agents-langchain/
 
