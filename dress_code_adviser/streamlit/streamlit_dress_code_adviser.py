@@ -3,15 +3,14 @@ import requests
 import base64
 
 
-st.title("Dress Code Adviser")
+st.title("Office Dress Code Adviser")
 
-st.info("""Please enter your OpenAI key in the panel on the left 
-            and upload a picture of your colleagues here below.""")
+st.info("""Please firstly enter your OpenAI key in the panel on the left""")
 
 openai_api_key = st.sidebar.text_input('OpenAI API Key', type='password')
 
 # Upload an image using streamlit
-uploaded_file = st.file_uploader("Choose an image...", type="jpg")
+uploaded_file = st.file_uploader("Choose an image of your colleagues...", type="jpg")
 
 if uploaded_file and openai_api_key.startswith('sk-'):
 
