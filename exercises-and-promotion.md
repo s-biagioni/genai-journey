@@ -8,6 +8,8 @@
 	- Image and text embedding with Hugging Face
 		- https://huggingface.co/blog/image-similarity
 		- https://discuss.huggingface.co/t/how-to-combine-image-and-text-embedding-for-product-similarity/47761 
+		
+	- Shelved Kept - Digital Family Valut
 
 ## GenAI Promotion
 
@@ -18,7 +20,7 @@
 		- https://www.shakudo.io/blog/building-confluence-kb-qanda-app-langchain-chatgpt
 	2. Bug fixing/prevention/analysis	
 		- https://www.deeplearning.ai/the-batch/github-previews-copilot-workspace-for-end-to-end-software-development/  
-
+________________________________________
 	+ Using HF models with private company data
 		- https://discuss.huggingface.co/t/using-hugging-face-models-with-private-company-data/56403
 			- https://huggingface.co/docs/transformers/main/en/installation
