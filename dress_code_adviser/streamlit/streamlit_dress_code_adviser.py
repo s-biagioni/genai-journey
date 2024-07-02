@@ -53,3 +53,7 @@ if uploaded_file and openai_api_key.startswith('sk-'):
     response = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload)
 
     print(response.json())
+
+    response_content = response.json()['choices'][0]['message']['content']
+
+    st.write(response_content)
