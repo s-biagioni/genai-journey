@@ -6,7 +6,7 @@ import base64
 st.title("Dress Code Adviser")
 
 st.info("""Please enter your OpenAI key in the panel on the left 
-            and write the 3 strings to create and visualise their embeddings.""")
+            and upload a picture of your colleagues here below.""")
 
 openai_api_key = st.sidebar.text_input('OpenAI API Key', type='password')
 
