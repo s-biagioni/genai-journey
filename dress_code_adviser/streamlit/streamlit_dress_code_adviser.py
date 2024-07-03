@@ -7,7 +7,7 @@ st.title("Office Dress Code Adviser")
 
 
 st.info("""
-        Please firstly enter your OpenAI API key in the panel on the left. \n
+        Please firstly enter your OpenAI API key in the panel on the left.
         If you don't have it, get one by following the instructions [here](https://platform.openai.com/docs/quickstart/account-setup).
 """)
 
