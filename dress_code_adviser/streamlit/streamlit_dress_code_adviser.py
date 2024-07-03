@@ -8,8 +8,8 @@ st.title("Office Dress Code Adviser")
 
 st.info("""
         Please firstly enter your OpenAI API key in the panel on the left.
-        
-        If you don't have it, get one by following the instructions [here](https://platform.openai.com/docs/quickstart/account-setup).
+
+        If you don't have a key, get one by following the instructions [here](https://platform.openai.com/docs/quickstart/account-setup).
 """)
 
 openai_api_key = st.text_input('OpenAI API Key', type='password')
