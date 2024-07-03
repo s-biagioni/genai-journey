@@ -5,9 +5,13 @@ import base64
 
 st.title("Office Dress Code Adviser")
 
-st.info("""Please firstly enter your OpenAI key in the panel on the left""")
 
-openai_api_key = st.sidebar.text_input('OpenAI API Key', type='password')
+st.info("""
+        Please firstly enter your OpenAI API key in the panel on the left. <br> 
+        If you don't have an OpenAI API key, you can get one by following the instructions in the [OpenAI API documentation](https://platform.openai.com/docs/quickstart/account-setup).
+""")
+
+openai_api_key = st.text_input('OpenAI API Key', type='password')
 
 # Upload an image using streamlit
 uploaded_file = st.file_uploader("Choose an image of your colleagues...", type="jpg")
