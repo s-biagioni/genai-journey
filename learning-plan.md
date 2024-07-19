@@ -61,7 +61,7 @@ https://www.deeplearning.ai/short-courses/vector-databases-embeddings-applicatio
 	- Exercises
 		+ https://github.com/s-biagioni/genai-journey/tree/main/0002_Image_Embeddings
 
-3. [ ] LangChain
+3. [X] LangChain
 https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/
 	+ Models, Prompts and Parsers
 		- OpenAI ChatGPT 3 turbo through LangChain wrapper
@@ -137,6 +137,7 @@ https://www.deeplearning.ai/short-courses/langchain-for-llm-application-developm
 	+ Chat
 		- handling follow-up questions
 			- from langchain.memory import ConversationBufferMemory
+			- from langchain.chains import ConversationalRetrievalChain
 		- creation of a complete chatbot
  
  
