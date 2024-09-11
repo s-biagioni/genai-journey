@@ -155,6 +155,7 @@ https://www.deeplearning.ai/short-courses/reinforcement-learning-from-human-feed
 	+ RAG
 		https://www.deeplearning.ai/short-courses/knowledge-graphs-rag/
 		https://learn.deeplearning.ai/courses/building-agentic-rag-with-llamaindex/
+		https://learn.deeplearning.ai/courses/multimodal-rag-chat-with-videos/
 
 	+ KV caching and LoRA
 		https://www.deeplearning.ai/short-courses/efficiently-serving-llms/
