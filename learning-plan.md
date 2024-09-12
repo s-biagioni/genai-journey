@@ -143,6 +143,26 @@ https://www.deeplearning.ai/short-courses/langchain-for-llm-application-developm
  
  --> look at Gabriele's links
  https://www.deeplearning.ai/short-courses/functions-tools-agents-langchain/
+	+ OpenAI Function calling
+	+ LangChain Expression Language (LCEL)
+		- linux pipe like
+			chain = prompt | model | output_parser
+		- binding an OpenAI Function to a model
+			model = model.bind(functions=functions)
+		- fallbacks: if simple_chain fails, use chain
+			final_chain = simple_chain.with_fallbacks([chain])
+			final_chain.invoke(challenge)
+		- various interfaces
+			- simple
+				chain.invoke({"topic": "bears"})
+			- parallel
+				chain.batch([{"topic": "bears"}, {"topic": "frogs"}])
+			- streaming pieces of the response while the llm is thinking
+				for t in chain.stream({"topic": "bears"}):
+					print(t)
+			- async
+				response = await chain.ainvoke({"topic": "bears"})
+				response
 
 4. [ ] Fine-Tuning
 https://www.deeplearning.ai/short-courses/finetuning-large-language-models/
