@@ -163,6 +163,31 @@ https://www.deeplearning.ai/short-courses/langchain-for-llm-application-developm
 			- async
 				response = await chain.ainvoke({"topic": "bears"})
 				response
+	+ OpenAI Function Calling In LangChain
+		- Pydantic: blend of Python's data classes with the validation power of Pydantic
+			- data adheres to specified types and constraints
+		- Pydantic to OpenAI function definition
+			class WeatherSearch2(BaseModel):
+				"""Call this with an airport code to get the weather at that airport"""
+				airport_code: str
+			convert_pydantic_to_openai_function(WeatherSearch2)
+			from langchain.chat_models import ChatOpenAI
+			model = ChatOpenAI()
+			model.invoke("what is the weather in SF today?", functions=[weather_function])
+		- forcing the usage of a Function
+			model_with_function = model.bind(functions=[weather_function])
+			model_with_function.invoke("what is the weather in sf?")
+		- Using an LCEL chain
+			from langchain.prompts import ChatPromptTemplate
+			prompt = ChatPromptTemplate.from_messages([
+				("system", "You are a helpful assistant"),
+				("user", "{input}")
+			])
+			chain = prompt | model_with_function
+			chain.invoke({"input": "what is the weather in sf?"})
+		- passing a list of pydantic functions and letting the model choose which function to use
+
+			
 
 4. [ ] Fine-Tuning
 https://www.deeplearning.ai/short-courses/finetuning-large-language-models/
